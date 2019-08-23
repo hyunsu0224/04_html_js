@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>25 이벤트 : mouseOver, Leave</title>
+<script type="text/javascript">
+	// 마우스오버 이벤트 처리함수
+	function myMouseOver() {
+		document.getElementById("contents").style.color = "green";
+	}
+	
+	// 마우스Leave 이벤트 처리함수
+	function myMouseLeave() {
+		document.getElementById("contents").style.color = "indigo";
+	}
+</script>
+</head>
+<body>
+	<h3>마우스오버 리브 이벤트</h3>
+	<hr />
+	<div id = "contents" onmouseover = "myMouseOver();" onmouseleave="myMouseLeave();">
+	글자 위로 마우스가 올라가면 글자색이 녹색으로 변경
+	글자 위에서 마우스가 벗어나면 글자색이 인디고색으로 변경
+	</div>	
+</body>
+</html>
